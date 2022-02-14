@@ -1,0 +1,1 @@
+alert("Ecommerce Project Guidelines");

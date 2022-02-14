@@ -1,7 +1,7 @@
 <?php
 class Main extends Controller{
     public function __construct(){
-        echo 'Hello from Main Controller';
+        //echo 'Hello from Main Controller';
     }
 
     /**

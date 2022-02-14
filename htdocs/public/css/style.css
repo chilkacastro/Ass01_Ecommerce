@@ -1,0 +1,60 @@
+html, body{
+    background-color: rgba(153, 151, 245, 0.959);
+
+}
+
+.bodyContact
+{
+    margin-top: 8%;
+}
+
+.headerContact{
+    text-align: center;
+}
+
+.asideContact{
+    text-align: center;
+    margin-top: 180px;
+}
+
+
+  .accordion-item{
+    background-color: rgba(153, 151, 245, 0.959);  
+  }
+
+
+  .accordion-header {
+    margin-bottom: 0;
+    background-color: rgba(153, 151, 245, 0.959);  
+}
+  
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: rgba(153, 151, 245, 0.959);  
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.13);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    font-weight: bold;
+    border-color: #000000;
+    background-color: rgba(153, 151, 245, 0.959); 
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(191, 48, 219, 0.25);
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+    background-color: rgba(153, 151, 245, 0.959); 
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}

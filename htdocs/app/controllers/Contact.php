@@ -6,7 +6,7 @@
 class Contact extends Controller {
     public function __construct()
     {
-        echo "Hello from the Contact Controller";
+        //echo "Hello from the Contact Controller";
     }
 
     /**
