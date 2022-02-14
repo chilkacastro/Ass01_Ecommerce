@@ -17,7 +17,7 @@ class Contact extends Controller {
     }
     
     /**
-     * contactme() method invokes the contactus view when the Controller is Contact
+     * contactus() method invokes the contactus view when the Controller is Contact
      */
     public function contactus(){
         $this->view('Contact/contactus');

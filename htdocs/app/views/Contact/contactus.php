@@ -1,3 +1,7 @@
+<?php
+    $SITENAME="CONTACT: Contact Us";
+?>
+
 <?php require APPROOT . '/views/includes/header.php'; ?>
 <div class="bodyContact">
     <div class="container-fluid">

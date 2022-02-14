@@ -1,3 +1,7 @@
+<?php
+    $SITENAME="MAIN: TIMELINE";
+?>
+
 <?php require APPROOT . '/views/includes/header.php'; ?>
     <br>
     <table class="table">

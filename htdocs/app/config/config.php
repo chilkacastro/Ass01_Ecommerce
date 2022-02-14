@@ -4,4 +4,4 @@
   //URL Root
   define('URLROOT', 'http://localhost');
   //Site Name
-  define('SITENAME', 'HOMEWORK');
+  define('SITENAME', 'HOMEWORK');  // replaced later in the views

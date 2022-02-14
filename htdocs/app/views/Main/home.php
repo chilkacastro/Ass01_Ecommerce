@@ -1,3 +1,7 @@
+<?php
+    $SITENAME="MAIN: Home";
+?>
+
 <?php require APPROOT . '/views/includes/header.php'; ?>
     <h1>Term Project (LIA): 420-411-VA</h1>
     <h2>This project is a PHP ECommerce Web App</h2>

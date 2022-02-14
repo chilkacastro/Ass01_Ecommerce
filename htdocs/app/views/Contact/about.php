@@ -1,4 +1,9 @@
+<?php
+    $SITENAME="CONTACT: About";
+?>
+
 <?php require APPROOT . '/views/includes/header.php'; ?>
+
 <br>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">

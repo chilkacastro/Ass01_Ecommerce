@@ -30,6 +30,11 @@
             // Step 3: Require the controller | require_once -> one time only and if it is already included then it will not require it again
             require_once '../app/controllers/'.$this->currentController.'.php';     // $this -> currentController is the syntax for PHP when calling the variable
 
+            // Step 3.1: So that if someone puts localhost/Contact -> it would go to the contactus page
+            if ($this -> currentController == 'Contact') { // if theres no method, then check the controller and then change the method
+                $this -> currentMethod = 'contactus';      // do this before step 4
+            }
+
             // Step 4 : Instantiate the controller class 
             $this->currentController = new $this->currentController;   // create an object of the currentController using keyword "new" // php knows which controller to make
             
@@ -39,15 +44,15 @@
                 if (method_exists($this->currentController, $url[1])) {
                     $this->currentMethod = $url[1];      // if the method exists in the current controller then change the value of the currentMethod to $url[1]
                     unset($url[1]);                      // after using clear out the value of the $url[1]
-                }
-            }
-
+                } 
+            } 
             // Step 6: Check if there is any parameter and if there is then get the params from the url but if there is none then return an empty array 
             $this->params = $url ? array_values($url) : [];
 
             //Step 7: Calling the method in our currentController with an array of params 
             call_user_func_array([$this->currentController, $this->currentMethod], $this->params);    // call_user_func_array([the controller, the method name], params array)
-        }
+        
+    }
 
         /**
          * Gets the input URL, clean it and then return it as an array
